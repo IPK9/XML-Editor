@@ -1,4 +1,4 @@
-XML Editor 2.3 – Changelog
+XML Editor 1.2.3 – Changelog
 
 New:
 - Added a new Tools menu to the main XML Editor window.
@@ -29,3 +29,44 @@ Internal:
 Known Notes:
 - Tools button sizing is slightly inconsistent with the other top-bar buttons.
 - Heuristic remapping / equivalent-node matching across different XML structures is not yet implemented, but is planned for a future update.
+
+
+XML Editor 1.2.4 – Changelog
+
+New:
+- Added heuristic remapping to the XML Comparison tool.
+- Added confidence scoring to comparison results.
+- Added support for identifying likely equivalent nodes even when XML structure differs.
+- Added a heuristic remapping toggle so the feature can be enabled or disabled during comparison.
+- Added a Heuristic Only filter to make it easier to review remapped results separately.
+
+Changed:
+- Improved the XML Comparison tool so it no longer relies only on exact path matching.
+- Expanded comparison result types to include heuristic-based matches.
+- Updated result handling to better distinguish between exact matches and probable equivalent matches.
+- Adjusted the Tools button sizing so it aligns more closely with the rest of the top-bar controls.
+
+Comparison Tool – Current Result Types:
+- Same
+- Changed
+- Changed (Heuristic)
+- Heuristic Match
+- Only in Left
+- Only in Right
+
+Heuristic Matching Logic:
+- Same item type
+- Same leaf/tag name
+- Same owner tag
+- Parent/path similarity
+- Value similarity
+- Depth similarity
+
+Internal:
+- Extended the comparison engine to score possible matches instead of relying purely on direct path equality.
+- Added confidence reporting to make heuristic matches easier to interpret.
+- Improved filtering support inside the comparison tool UI.
+
+Known Notes:
+- Heuristic matching is now functional, but repeated blocks and sibling-heavy XML structures can still produce ambiguous matches in some cases.
+- Additional refinement is planned to improve matching accuracy where multiple similar nodes exist under the same parent or across repeated structures.
