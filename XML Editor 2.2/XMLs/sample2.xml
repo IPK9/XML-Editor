@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<company>
+    <employees>
+        <employee id="1">
+            <name>Isaac</name>
+            <role>Engineer</role>
+            <salary>50000</salary>
+        </employee>
+        <employee id="2">
+            <name>Sarah</name>
+            <role>Designer</role>
+            <salary>45000</salary>
+        </employee>
+    </employees>
+
+    <departments>
+        <department>
+            <name>Engineering</name>
+            <location>London</location>
+        </department>
+        <department>
+            <name>Design</name>
+            <location>Manchester</location>
+        </department>
+    </departments>
+</company>
