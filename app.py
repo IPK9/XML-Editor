@@ -146,6 +146,8 @@ class XMLGuiEditor:
             relief="flat",
             padx=12,
             pady=6,
+            width=11,
+            anchor="center",
             font=FONT_BOLD,
             activebackground=ACCENT,
             activeforeground=BUTTON_FG,
@@ -238,6 +240,7 @@ class XMLGuiEditor:
             import_name = f"tools.{module_name}"
             try:
                 module = importlib.import_module(import_name)
+                module = importlib.reload(module)
             except Exception as exc:
                 self.tool_errors.append(f"{module_name}: {exc}")
                 continue
