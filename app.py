@@ -1,4 +1,7 @@
+import importlib
 import json
+import os
+import pkgutil
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import xml.etree.ElementTree as ET
@@ -56,6 +59,13 @@ class XMLGuiEditor:
         self.search_var.trace_add("write", self.refresh_view)
         self.xml_status_var = tk.StringVar(value="Open an XML file to begin.")
 
+        self.discovered_tools = []
+        self.tool_errors = []
+        self.open_tool_windows = {}
+        self.tools_menu = None
+        self.tools_button = None
+
+        self._discover_tools()
         self._build_window()
 
     # =========================
@@ -115,7 +125,7 @@ class XMLGuiEditor:
             ("Save XML As", self.save_xml_as),
         ]
 
-        for index, (text, cmd) in enumerate(button_specs):
+        for text, cmd in button_specs:
             tk.Button(
                 right_bar,
                 text=text,
@@ -126,7 +136,35 @@ class XMLGuiEditor:
                 padx=12,
                 pady=6,
                 font=FONT_BOLD,
-            ).pack(side="left", padx=(0, 8 if index < len(button_specs) - 1 else 0))
+            ).pack(side="left", padx=(0, 8))
+
+        self.tools_button = tk.Menubutton(
+            right_bar,
+            text="Tools ▼",
+            bg=ACCENT,
+            fg=BUTTON_FG,
+            relief="flat",
+            padx=12,
+            pady=6,
+            font=FONT_BOLD,
+            activebackground=ACCENT,
+            activeforeground=BUTTON_FG,
+            highlightthickness=0,
+            direction="below",
+        )
+        self.tools_button.pack(side="left")
+
+        self.tools_menu = tk.Menu(
+            self.tools_button,
+            tearoff=False,
+            bg=CARD_BG,
+            fg=TEXT,
+            activebackground=HIGHLIGHT_ROW,
+            activeforeground=TEXT,
+            relief="flat",
+        )
+        self.tools_button.configure(menu=self.tools_menu)
+        self._rebuild_tools_menu()
 
         self.file_label = tk.Label(
             self.root,
@@ -181,6 +219,140 @@ class XMLGuiEditor:
             padx=10,
             pady=8,
         ).pack(fill="x")
+
+    # =========================
+    # TOOL DISCOVERY
+    # =========================
+    def _discover_tools(self):
+        self.discovered_tools = []
+        self.tool_errors = []
+
+        tools_dir = os.path.join(os.path.dirname(__file__), "tools")
+        if not os.path.isdir(tools_dir):
+            return
+
+        for _, module_name, is_pkg in pkgutil.iter_modules([tools_dir]):
+            if is_pkg or not module_name.endswith("_tool"):
+                continue
+
+            import_name = f"tools.{module_name}"
+            try:
+                module = importlib.import_module(import_name)
+            except Exception as exc:
+                self.tool_errors.append(f"{module_name}: {exc}")
+                continue
+
+            tool_id = getattr(module, "TOOL_ID", "").strip()
+            tool_name = getattr(module, "TOOL_NAME", "").strip()
+            launch = getattr(module, "launch", None)
+
+            if not tool_id or not tool_name or not callable(launch):
+                self.tool_errors.append(
+                    f"{module_name}: tool modules must define TOOL_ID, TOOL_NAME, and launch(app)."
+                )
+                continue
+
+            self.discovered_tools.append(
+                {
+                    "id": tool_id,
+                    "name": tool_name,
+                    "order": int(getattr(module, "TOOL_ORDER", 100)),
+                    "description": str(getattr(module, "TOOL_DESCRIPTION", "")).strip(),
+                    "single_instance": bool(getattr(module, "SINGLE_INSTANCE", True)),
+                    "launch": launch,
+                    "module_name": module_name,
+                }
+            )
+
+        self.discovered_tools.sort(key=lambda tool: (tool["order"], tool["name"].lower()))
+
+    def _rebuild_tools_menu(self):
+        if self.tools_menu is None:
+            return
+
+        self.tools_menu.delete(0, "end")
+
+        if not self.discovered_tools:
+            self.tools_menu.add_command(label="No tools discovered", state="disabled")
+        else:
+            for tool in self.discovered_tools:
+                self.tools_menu.add_command(
+                    label=tool["name"],
+                    command=lambda tool_id=tool["id"]: self.launch_discovered_tool(tool_id),
+                )
+
+        self.tools_menu.add_separator()
+        self.tools_menu.add_command(label="Refresh Tools", command=self.refresh_tools)
+
+        if self.tool_errors:
+            self.tools_menu.add_separator()
+            self.tools_menu.add_command(label="View Tool Load Errors", command=self.show_tool_errors)
+
+    def refresh_tools(self):
+        self._discover_tools()
+        self._rebuild_tools_menu()
+        self._set_xml_status(f"Discovered {len(self.discovered_tools)} tool(s).")
+
+    def show_tool_errors(self):
+        if not self.tool_errors:
+            messagebox.showinfo("Tool Discovery", "No tool loading errors were found.")
+            return
+
+        messagebox.showwarning(
+            "Tool Load Errors",
+            "Some tool modules could not be loaded:\n\n" + "\n".join(self.tool_errors),
+        )
+
+    def launch_discovered_tool(self, tool_id):
+        tool = next((item for item in self.discovered_tools if item["id"] == tool_id), None)
+        if tool is None:
+            messagebox.showerror("Tool not found", f"The tool '{tool_id}' could not be found.")
+            return
+
+        if tool["single_instance"]:
+            existing = self.open_tool_windows.get(tool_id)
+            if existing is not None and hasattr(existing, "winfo_exists") and existing.winfo_exists():
+                existing.lift()
+                try:
+                    existing.focus_force()
+                except Exception:
+                    pass
+                return
+
+        try:
+            launched = tool["launch"](self)
+        except Exception as exc:
+            messagebox.showerror("Tool error", f"The tool '{tool['name']}' could not be started.\n\n{exc}")
+            return
+
+        if tool["single_instance"]:
+            window_handle = self._extract_window_handle(launched)
+            if window_handle is not None:
+                self.open_tool_windows[tool_id] = window_handle
+
+                def _cleanup(_event=None, tid=tool_id):
+                    self.open_tool_windows.pop(tid, None)
+
+                window_handle.bind("<Destroy>", _cleanup, add="+")
+
+    def _extract_window_handle(self, launched_object):
+        if launched_object is None:
+            return None
+        if isinstance(launched_object, tk.Toplevel):
+            return launched_object
+        window = getattr(launched_object, "window", None)
+        if isinstance(window, tk.Toplevel):
+            return window
+        return None
+
+    def get_current_xml_text(self):
+        if self.xml_root is None:
+            return None
+        self._write_widgets_back_to_xml()
+        return ET.tostring(self.xml_root, encoding="unicode")
+
+    def get_current_xml_display_name(self):
+        return self.current_file or "Current XML (unsaved view)"
 
     # =========================
     # FILE ACTIONS

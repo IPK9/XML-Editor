@@ -1,0 +1,31 @@
+XML Editor 2.3 – Changelog
+
+New:
+- Added a new Tools menu to the main XML Editor window.
+- Added automatic tool discovery so new tools can be added without hardcoding each one into the main application.
+- Added the first external tool module: XML Comparison.
+- XML Comparison can load two XML files side by side for structural/value comparison.
+- XML Comparison supports using the currently open XML file as one side of the comparison.
+- XML Comparison also supports manually selecting both files independently.
+
+Changed:
+- Kept the standard XML Editor layout and workflow intact.
+- Kept the JSON Editor as a normal top-level button rather than moving or hiding it.
+- Extended the application from a single editor into a more modular editor-plus-tools structure.
+- Improved future expandability by allowing additional tools to be added through the tools system.
+
+Comparison Tool – Current Features:
+- Exact path-based XML comparison.
+- Detection of changed values.
+- Detection of nodes only present on the left file.
+- Detection of nodes only present on the right file.
+- Universal difference highlighting based on “changed” status rather than higher/lower numeric logic.
+
+Internal:
+- Refactored the application to support discovered tool modules.
+- Added a tools package/folder for future expansion.
+- Established the foundation for more advanced comparison logic in future versions.
+
+Known Notes:
+- Tools button sizing is slightly inconsistent with the other top-bar buttons.
+- Heuristic remapping / equivalent-node matching across different XML structures is not yet implemented, but is planned for a future update.
