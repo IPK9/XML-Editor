@@ -1,0 +1,20 @@
+{
+  "replacements": [
+    {
+      "path": ".//careerSavegame/settings[1]/savegameName[1]",
+      "value": "My New Save2"
+    },
+    {
+      "path": ".//careerSavegame/settings[1]/economicDifficulty[1]",
+      "value": "HARD"
+    },
+    {
+      "path": ".//career/currentMoney",
+      "value": "2500000"
+    },
+    {
+      "path": ".//careerSavegame/settings[1]/initialMoney[1]",
+      "value": "1003425"
+    }
+  ]
+}

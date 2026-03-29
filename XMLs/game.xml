@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='utf-8'?>
+<careerSavegame revision="2" valid="true">
+    <settings>
+        <savegameName>My New Save</savegameName>
+        <creationDate>2025-12-31</creationDate>
+        <mapId>MapEU</mapId>
+        <mapTitle>Zielonka</mapTitle>
+        <saveDateFormatted>2025-12-31</saveDateFormatted>
+        <saveDate>2025-12-31</saveDate>
+        <initialMoney>100000</initialMoney>
+        <initialLoan>0</initialLoan>
+        <economicDifficulty>EASY</economicDifficulty>
+        <hasInitiallyOwnedFarmlands>true</hasInitiallyOwnedFarmlands>
+        <loadDefaultFarm>true</loadDefaultFarm>
+        <startWithGuidedTour>true</startWithGuidedTour>
+        <trafficEnabled>true</trafficEnabled>
+        <stopAndGoBraking>true</stopAndGoBraking>
+        <trailerFillLimit>false</trailerFillLimit>
+        <automaticMotorStartEnabled>true</automaticMotorStartEnabled>
+        <growthMode>2</growthMode>
+        <plannedDaysPerPeriod>1</plannedDaysPerPeriod>
+        <fruitDestruction>false</fruitDestruction>
+        <plowingRequiredEnabled>false</plowingRequiredEnabled>
+        <stonesEnabled>false</stonesEnabled>
+        <weedsEnabled>false</weedsEnabled>
+        <limeRequired>false</limeRequired>
+        <isSnowEnabled>true</isSnowEnabled>
+        <fuelUsage>2</fuelUsage>
+        <helperBuyFuel>true</helperBuyFuel>
+        <helperBuySeeds>true</helperBuySeeds>
+        <helperBuyFertilizer>true</helperBuyFertilizer>
+        <helperSlurrySource>2</helperSlurrySource>
+        <helperManureSource>2</helperManureSource>
+        <densityMapRevision>4</densityMapRevision>
+        <terrainTextureRevision>1</terrainTextureRevision>
+        <terrainLodTextureRevision>2</terrainLodTextureRevision>
+        <splitShapesRevision>2</splitShapesRevision>
+        <tipCollisionRevision>2</tipCollisionRevision>
+        <placementCollisionRevision>2</placementCollisionRevision>
+        <navigationCollisionRevision>2</navigationCollisionRevision>
+        <mapDensityMapRevision>1</mapDensityMapRevision>
+        <mapTerrainTextureRevision>1</mapTerrainTextureRevision>
+        <mapTerrainLodTextureRevision>1</mapTerrainLodTextureRevision>
+        <mapSplitShapesRevision>1</mapSplitShapesRevision>
+        <mapTipCollisionRevision>1</mapTipCollisionRevision>
+        <mapPlacementCollisionRevision>1</mapPlacementCollisionRevision>
+        <mapNavigationCollisionRevision>1</mapNavigationCollisionRevision>
+        <disasterDestructionState>ENABLED</disasterDestructionState>
+        <dirtInterval>3</dirtInterval>
+        <timeScale>6.000000</timeScale>
+        <autoSaveInterval>15.000000</autoSaveInterval>
+        <isCrossPlatformSavegame>false</isCrossPlatformSavegame>
+    </settings>
+    <map>
+        <foundHelpIcons>00000000000000000000</foundHelpIcons>
+    </map>
+    <introductionHelp active="false">
+        <shownElements />
+        <shownHints />
+    </introductionHelp>
+    <statistics>
+        <money>33361</money>
+        <playTime>14.674817</playTime>
+    </statistics>
+    <mapsSplitShapeFileIds count="1">
+        <id id="0" />
+    </mapsSplitShapeFileIds>
+    <slotSystem slotUsage="666" />
+    <foliageTypes>
+        <foliageType name="onion" filename="data/foliage/onion/onion.xml" />
+    </foliageTypes>
+    <mod modName="FS25_PerfectEdge" title="PerfectEdge" version="1.1.0.0" required="false" fileHash="e59ad491b98525fcfcd4ca4244115484" />
+    <mod modName="pdlc_macDonPack" title="MacDon Pack" version="1.1.0.0" required="false" fileHash="a910fbe59bd919187cacbfc7b63ec5a6" />
+    <mod modName="FS25_Ivoy_Chicken_Coop" title="Ivoy Chicken Coop" version="1.0.0.0" required="false" fileHash="94e7341f98b5a18703aba1481aa3da92" />
+    <mod modName="FS25_johnDeereSeries7810" title="John Deere 7810" version="1.0.0.2" required="false" fileHash="606b7e573054cdf745e81180c2e5898b" />
+    <mod modName="FS25_SulkyMasterPack" title="Sulky Master Pack" version="1.0.0.0" required="false" fileHash="8abc077259637a9af37ed1c92ed951ac" />
+    <mod modName="FS25_FlieglTimberRunnerAutoload" title="Fliegl Timber Runner Autoload Wood" version="1.0.0.0" required="false" fileHash="7edb846d607e16b935578fc1860402ff" />
+    <mod modName="FS25_JD_S7Serie" title="John Deere S7 Series" version="1.0.0.0" required="false" fileHash="4603c365a870e6ef36a5b0588701c399" />
+    <mod modName="FS25_additionalGameSettings" title="Additional Game Settings" version="1.0.0.5" required="false" fileHash="34a0f3c4cd8606008a8be0e673f26200" />
+    <mod modName="FS25_Case_800MR" title="Case 800 MR" version="1.0.0.0" required="false" fileHash="d928db493274cb5d4a35cbef0677d75b" />
+    <mod modName="FS25_fortunaFTM200" title="Fortuna FTM 200 / 7.5" version="1.0.0.0" required="false" fileHash="c0239fc9324b7c292f1ad11fa897bf9b" />
+    <mod modName="FS25_johnDeereDealerSign" title="John Deere Dealer Sign" version="1.0.0.0" required="false" fileHash="909a45f76fd52af3fffb50a46afbd0d1" />
+    <mod modName="FS25_buehrer6105DF" title="Buehrer Series 6105/6115/6125/6135" version="1.0.0.0" required="false" fileHash="a0ca8b3dd4482e7f369d3fb2838222f8" />
+    <mod modName="FS25_Lizard_SM1200" title="SM 1200" version="1.0.0.0" required="false" fileHash="fe79f2b692df1b7badce45ff3ee066dc" />
+    <mod modName="FS25_JS_S700_crossplay" title="John Deere S700 Series" version="1.0.0.1" required="false" fileHash="1c786226ec1e4484031d74e162a45bec" />
+    <mod modName="FS25_SpecialOffers" title="Special Offers" version="4.0.0.0" required="false" fileHash="490cdece73f2fc29b28c96ac7a8704b0" />
+    <mod modName="FS25_International_55" title="International 55 Chisel Plow" version="1.0.0.0" required="false" fileHash="9fa0006bbfe915866e828d679ac65620" />
+    <mod modName="FS25_Fliegl_TMK_273" title="Fliegl TMK273" version="1.0.0.0" required="false" fileHash="dd3850d5dbad7a44b51239cdad69f64e" />
+    <mod modName="FS25_BunkerSilo_Pack" title="Bunker Silo Pack" version="1.0.0.0" required="false" fileHash="e958a0408cfc242ee53c6cfa5412995c" />
+    <mod modName="FS25_claasCarat" title="Claas Carat" version="1.0.0.0" required="false" fileHash="4ded317c40a45b41701bc67b6b3b2527" />
+    <mod modName="FS25_JohnDeereSliceWeight" title="John Deere Slice Weight" version="1.0.0.0" required="false" fileHash="3771119258c4fa29443f8c9a3d543095" />
+    <mod modName="FS25_NewHollandTXSerie" title="New Holland TX 62" version="1.0.0.0" required="false" fileHash="d0612d9cc2731b95dabc6181b00b0f4d" />
+    <mod modName="FS25_johnDeereSeries4755" title="John Deere 4755" version="1.0.0.2" required="false" fileHash="375e2f08c19e0822e73616217aca7fb9" />
+    <mod modName="FS25_growNow" title="Grow Now" version="1.0.0.0" required="false" fileHash="7ebb956a161d009fa1e0a8cbb7acfee4" />
+    <mod modName="FS25_additionalFieldInfo" title="Additional Field Info" version="1.0.2.0" required="false" fileHash="557733bdd32b06ef8ac2f326aff22e1d" />
+    <mod modName="FS25_JICase970_1070" title="Case 970, 1070 Agri King" version="1.0.0.0" required="false" fileHash="ea0a889e72dd9707b36d1eaebb77b5bb" />
+    <mod modName="FS25_John_Deere_XUV845E" title="John Deere XUV845E / XUV845E4" version="1.0.0.0" required="false" fileHash="a9c0ed218d4aee7c1b9f75a102b54a54" />
+    <mod modName="FS25_JohnDeere_S700_Series" title="John Deere S700 Series Combines" version="1.0.0.2" required="false" fileHash="93eb288e103dd116f41e67367d947ff8" />
+    <mod modName="pdlc_plainsAndPrairiesPack" title="Plains &amp; Prairies Pack" version="1.3.0.0" required="false" fileHash="9b6cf029e90ff4127f2d8c6d46325ff4" />
+    <mod modName="FS25_strautmann_aperion3401" title="Strautmann Aperion 3401" version="1.0.0.0" required="false" fileHash="889bb2c2aad0cb3f544b71f2e01dfbaf" />
+    <mod modName="FS25_JohnDeere6M" title="John Deere 6M Series" version="1.0.0.1" required="false" fileHash="14bd250e0a1f002d536e2b88c1ef8d29" />
+    <mod modName="FS25_PowerTools" title="PowerTools" version="1.1.0.0" required="false" fileHash="cf0ce7ddaa380ff5a725801ba9657f0e" />
+    <mod modName="FS25_John_Deere_627C" title="John Deere 627C" version="1.0.0.0" required="false" fileHash="694213024dcbda0961af1a169d1cfcc6" />
+    <mod modName="FS25_JD_RD35F_US" title="John Deere RD35F US" version="1.0.0.0" required="false" fileHash="95aa1caeecf5fdc8d28bdb3fa3bf9727" />
+    <mod modName="FS25_NH_M135" title="New Holland M135" version="1.0.0.1" required="false" fileHash="05687962e0f0c10995300396f629bca2" />
+    <mod modName="FS25_RudolphWelgerDK280RP" title="Rudolph/Welger DK 280 RP" version="1.2.0.1" required="false" fileHash="510b9cd48ffc64aac24a35c1050d9a32" />
+    <mod modName="FS25_GreenSystemTrailers" title="John Deere GreenSystem Trailer Pack" version="1.0.0.0" required="false" fileHash="340692878a98a6e0f7d2f60d583a9878" />
+    <mod modName="FS25_Ivoy_Straw_Hangar" title="Ivoy Straw Hangar" version="1.0.0.0" required="false" fileHash="c1bfd77e03be78554635048e7e1cc94f" />
+    <mod modName="FS25_Balers_Pack_Whit_Windrower" title="Pack Of Balers With Windrower" version="1.0.0.0" required="false" fileHash="688688b2c8d9674d6a7a487b0b78471d" />
+    <mod modName="FS25_JD8350" title="John Deere 8350" version="1.0.0.0" required="false" fileHash="ca6d33b3a73587ab3428250669664155" />
+    <mod modName="FS25_JeantilBR10430" title="Jeantil BR 104-30" version="1.0.0.0" required="false" fileHash="77db9687ac06d0dffffed896968256ff" />
+    <mod modName="FS25_mcCormickW4" title="McCormick Deering W4" version="1.0.0.0" required="false" fileHash="1a4047b835092e72e709f36f0f09777e" />
+    <mod modName="FS25_E281_Pack" title="Fortschritt E 281-C Pack" version="1.0.0.0" required="false" fileHash="81a9a20e5303cfb5f08231d53d56f92b" />
+    <mod modName="FS25_zetor3011" title="Zetor 3011 Major" version="1.0.1.0" required="false" fileHash="b93fb9f183e651d1f7eb6b42e24bea8c" />
+    <mod modName="FS25_dalboMegaRoll2430" title="Dalbo MegaRoll 2430" version="1.0.0.0" required="false" fileHash="4275160198b18ce7c473857e5f29a25d" />
+    <mod modName="FS25_johnDeereXUV865M" title="John Deere XUV865M" version="1.0.0.1" required="false" fileHash="2918255a9e3dc3c8398cf3d63aaa6860" />
+    <mod modName="FS25_johnDeere1365" title="John Deere 1365 Mower" version="1.0.0.0" required="false" fileHash="712fac2809570cbf0d62d4b2ed04d8ab" />
+    <mod modName="FS25_JCB_Fastrac8330" title="JCB Fastrac 8330" version="1.0.0.0" required="false" fileHash="5c710f580d0609c3e4e9ce6fac0ce2e1" />
+    <mod modName="FS25_JD_1775NT_2022" title="John Deere 1775NT 2022" version="1.0.0.0" required="false" fileHash="9672ee1d7e24738d99b0033204627156" />
+    <mod modName="FS25_Sales_Plus" title="Sales Plus" version="1.0.0.0" required="false" fileHash="53aaa44824f2c6c37779e730053cedf2" />
+    <mod modName="FS25_johnDeereSeries7010_SLM" title="John Deere Series 7010" version="1.2.0.1" required="false" fileHash="a49e2e326f5ac8ee7f372368e6efe681" />
+    <mod modName="FS25_John_Deere_6r_Series" title="John Deere 6R Series" version="1.0.0.0" required="false" fileHash="6b1b13becc7fb07d0166a21a604462e3" />
+    <mod modName="FS25_KroneBalerPack" title="Krone Baler Pack" version="1.0.1.0" required="false" fileHash="4a1d2024ff067b2f27811ef0841be7f1" />
+    <mod modName="FS25_IncreaseLightRange" title="Increase Light Range" version="1.0.0.0" required="false" fileHash="ffba7cac8e3731b5d2364733ce218e71" />
+    <mod modName="FS25_JD4755" title="John Deere 4755-4955" version="1.0.0.0" required="false" fileHash="90577b1a862f24f2cf531e26eb033103" />
+    <mod modName="FS25_SplitBrakes" title="Split Brakes" version="1.1.0.0" required="false" fileHash="2449649fc387fcfdbb5a04796bb49a48" />
+    <mod modName="FS25_strautmannSEK802" title="Strautmann SEK 802" version="1.0.0.0" required="false" fileHash="1cd0b108ec03f9f9bde45aa5e2bbac11" />
+    <mod modName="FS25_Fiatagri_160180_90" title="Fiatagri Series 90" version="1.0.0.0" required="false" fileHash="97f5725d9c1efd40bcf5da69800401d2" />
+    <mod modName="FS25_MF4000Series" title="Massey Ferguson 4000 Series" version="1.0.0.0" required="false" fileHash="dfe6b895f51946d29c5312e6a78ffb19" />
+    <mod modName="FS25_kotschenreutherK300R" title="Kotschenreuther K300r" version="1.0.0.1" required="false" fileHash="bae1cd2f740a25e0a81b09a81f3d8f29" />
+    <mod modName="FS25_exhaustExtension" title="Exhaust Extension" version="1.0.0.3" required="false" fileHash="7f716ec7f8bcb694511377055a133941" />
+    <mod modName="FS25_flieglCargos" title="Fliegl CARGOS 750/760" version="1.0.0.0" required="false" fileHash="855153cbe97b1c5b548083bdb309273e" />
+    <mod modName="FS25_Ivoy_Piggery" title="Ivoy Piggery" version="1.0.0.0" required="false" fileHash="90d801869ef10a9ab43a522616f25957" />
+    <mod modName="FS25_Collect900_Poplar_SugarCane" title="Collect900 For Sugarcane And Poplar" version="1.0.0.1" required="false" fileHash="8556945e91aef88d13a3ca74b95308ea" />
+    <mod modName="FS25_JohnDeere6030comfort" title="John Deere 6030 Comfort Series" version="1.1.0.0" required="false" fileHash="e2c8c2ef1546ace556ad9d50d3ac0a1e" />
+    <mod modName="FS25_FramestTillagePack" title="Framest Tillage Pack" version="1.3.0.0" required="false" fileHash="150667d4e0832cfc296326283cc9e6bf" />
+    <mod modName="FS25_ShopSearch" title="Store Search" version="1.1.0.0" required="false" fileHash="e3ab65c7752932e6832cf7dab4e18bd8" />
+    <mod modName="FS25_JohnDeere_6R_Series" title="John Deere 6R Series Pack" version="1.0.1.0" required="false" fileHash="fcec67c647c54376bbcc18c761ee25cc" />
+    <mod modName="FS25_horschCura24ST" title="Horsch Cura 24 ST" version="1.0.0.0" required="false" fileHash="b82c17b53cff5ee48f96f8272c075bec" />
+    <mod modName="FS25_johnDeereSeries710" title="John Deere 710" version="1.0.0.1" required="false" fileHash="5b32e29b344347dc5ebad2f9f4eccbc9" />
+    <mod modName="FS25_CropManager" title="Extended Straw Crops" version="1.0.0.1" required="false" fileHash="4d02c7ca02064227f67e66911f7694cd" />
+    <mod modName="FS25_volvoPack" title="Volvo Pack" version="1.0.0.1" required="false" fileHash="31ae4edc2a8a006e445b0e52f0b260d7" />
+    <mod modName="FS25_JohnDeere_8000" title="John Deere 8000" version="1.0.0.0" required="false" fileHash="a525902f2fd7389fc672c62879d5bcea" />
+    <mod modName="FS25_johnDeerePlanter1775NT" title="John Deere 1775NT" version="1.0.0.1" required="false" fileHash="18d7e572775dc4be7c70cba419e5bf66" />
+    <mod modName="FS25_JohnDeere110_112_RoundFender" title="John Deere 110/112 Round Fender" version="1.0.0.0" required="false" fileHash="5661b2d2d10d9eeceb317bf7f346ff2e" />
+    <mod modName="FS25_RM_Subsidy" title="Government Subsidy" version="1.0.0.0" required="false" fileHash="d324c77709ffd0ca671aed7d38221c14" />
+    <mod modName="FS25_Fiat_1300DT" title="FIAT 1300 DT" version="1.0.0.0" required="false" fileHash="594d7f543b5885ce040fd95d144fc8f6" />
+    <mod modName="FS25_OrkanZ320" title="Orkan Z305/Z310/Z320" version="1.0.0.0" required="false" fileHash="5251b4fec960345f7a896afc3d2fd0b1" />
+    <mod modName="FS25_ASM_FarmyardTrailerDolly" title="Farmyard Trailer Dolly" version="1.0.0.0" required="false" fileHash="4d3d8aa3f37098032235232ff019184b" />
+    <mod modName="FS25_baleAutoloadPack" title="Bale Autoload Pack" version="1.0.0.0" required="false" fileHash="3c4e5d1a22451f2a629f896ca8d0d247" />
+    <mod modName="FS25_JohnDeere445" title="John Deere 445 And Utilitys" version="1.0.0.0" required="false" fileHash="31c73bee418049cce92498c17fb23824" />
+    <mod modName="FS25_zetor6" title="Zetor UR2 6 Pack" version="1.0.0.2" required="false" fileHash="8f1724ca26b140b139d966856ef36c6a" />
+    <mod modName="FS25_Cargocart" title="Cargo Cart" version="1.0.0.0" required="false" fileHash="50764e1484f0ab52ea2b9888c2995b8c" />
+    <mod modName="FS25_Ivoy_Farm_Garage" title="Ivoy Farm Garage" version="1.0.0.0" required="false" fileHash="4db24f146b59c0417164475206ab490d" />
+    <mod modName="FS25_ConcreteSilo" title="Silage Silo" version="1.0.0.0" required="false" fileHash="e9f72e9d7b35f83864b9ad3a198b3dc3" />
+    <mod modName="FS25_JohnDeereTSeriesPack" title="John Deere T-Series And 600X Headers" version="1.0.1.0" required="false" fileHash="b9856424718a7979f0355d18a6487bc7" />
+    <mod modName="FS25_JohnDeere6R_LargeSeries" title="John Deere 6R 175-215" version="1.1.0.0" required="false" fileHash="85df7ba8700499bfb38e671bfd1914ea" />
+    <mod modName="FS25_redrock20T" title="Redrock 20T Trailer" version="1.0.0.0" required="false" fileHash="c28b559f75ddd654bfa3201bce97ae16" />
+    <mod modName="FS25_Wooden_Shed" title="Wooden Shed" version="1.0.0.0" required="false" fileHash="e09e63d9dbb8b5da486089ce4e4e61db" />
+    <mod modName="FS25_Lizard_b5" title="Large Tine Harrow" version="1.0.0.0" required="false" fileHash="e8ec6120390a8814a3806e743135b767" />
+    <mod modName="FS25_LizardMiniPack" title="Lizard Mini 2.5 / 2.5R Pack" version="1.0.0.0" required="false" fileHash="70c378b08f220c7f9d33e0bbee399820" />
+    <mod modName="FS25_wilsonPacesetter" title="Wilson Pacesetter" version="1.0.0.0" required="false" fileHash="d10cde877110f1f9764f371a16784216" />
+    <mod modName="FS25_Versatile_4WD" title="Versatile 4WD" version="1.0.0.0" required="false" fileHash="c1b9d08974fe2298b88f6978417e6a82" />
+    <mod modName="FS25_UTB_Universal_650" title="UTB Universal 650" version="1.0.0.0" required="false" fileHash="6389ef913ab0478fcc0ca288a6611959" />
+    <mod modName="FS25_Brantner_TA_23065_2_Power_Tube_plus" title="Brantner TA 23065/2 Power Tube +" version="1.0.0.0" required="false" fileHash="bfd821ea7625a9cdc94eec5b72482df5" />
+    <mod modName="FS25_krampeProBody760" title="Krampe ProBody 760" version="1.0.0.0" required="false" fileHash="691ad2199f1b11bacc79ad14caa95f11" />
+    <mod modName="FS25_BigBud_series_3" title="BigBud Series 3" version="1.0.0.1" required="false" fileHash="487c58f29490ac766f6b0805f7e0237a" />
+    <mod modName="FS25_TidyShop_ModTitles" title="TidyShop: ModTitles" version="1.0.0.0" required="false" fileHash="7c47204e0ed4fd312f0ecdf900ebb216" />
+    <mod modName="FS25_StoneAgriculturalAnnex" title="Stone Agricultural Annex" version="1.0.0.0" required="false" fileHash="90dabf7c1e70cf6c9dac53b23f97a760" />
+    <mod modName="FS25_realSpeedLimit" title="Real Speed Limit" version="1.0.0.0" required="false" fileHash="f98c8cbc0ca5232794eb87edfe0f115e" />
+    <mod modName="FS25_TransportTrailer25M" title="Transport Trailer 19m And 25m" version="1.0.0.0" required="false" fileHash="178991ef69bdefc1900cd43943a0abb3" />
+    <mod modName="FS25_ToolInclinationHelper" title="Tool Inclination Helper" version="1.0.0.6" required="false" fileHash="f52099657b34cef3adc4443a0815787d" />
+    <mod modName="FS25_E512" title="Fortschritt E-512/E-514" version="1.0.0.1" required="false" fileHash="df545996dfd2137de8e1e5a46533159c" />
+    <mod modName="FS25_tmk273" title="Fliegl TMK273" version="1.0.0.0" required="false" fileHash="b05303d0482fb5234aed18c62eb96186" />
+    <mod modName="FS25_unlimitedColorConfigurations" title="Unlimited Color Configurations" version="1.0.0.0" required="false" fileHash="4b13a100610865fd4d28b5b4f896deec" />
+    <mod modName="FS25_Unia_AresL_3m" title="Unia Ares L 3m" version="1.0.0.0" required="false" fileHash="9ce0ec6d26c437e1898fd42daa4aed72" />
+    <mod modName="FS25_johnDeereT560Pack" title="John Deere T560 Pack" version="1.0.0.1" required="false" fileHash="0d93517062c214efde417509f599c710" />
+    <mod modName="FS25_EngineBrakeforceCompensation" title="Engine Brakeforce Compensation" version="1.0.0.0" required="false" fileHash="bb0f39b3928888d0ba9dd9b7882b4885" />
+    <mod modName="FS25_caseIH_Magnum7240Pro" title="CASE IH Magnum 7200 Pro Series" version="1.0.0.0" required="false" fileHash="8265d88be77976594a1ec30d9ed643c1" />
+    <mod modName="FS25_JohnDeere_7J_7030" title="John Deere 7J / 7030" version="1.0.0.0" required="false" fileHash="bf43e83af24ab2f34a06487b29991312" />
+    <mod modName="FS25_BigBud_series_1" title="BigBud Series 1" version="1.0.0.0" required="false" fileHash="15edf093a695f134be70bdf789ba1258" />
+    <mod modName="FS25_Sopema_FertilizerTrailer" title="Sopema Fertilizer Trailer" version="1.0.0.0" required="false" fileHash="47ef5d480edc28e17165703269569106" />
+    <mod modName="FS25_Shovelhand" title="Shovel" version="1.2.0.0" required="false" fileHash="4c346bd8d7aac3017bb68cf83201160d" />
+    <mod modName="FS25_Kuhn_HR4004_BTF4000_TF1512" title="Kuhn HR 4004 + BTF 4000 + TF1512" version="1.0.0.0" required="false" fileHash="cdae326b73dc90ef70984f10ef9bd61a" />
+    <mod modName="FS25_Schlueter_2500_VL" title="Schlüter 2500 VL" version="1.2.0.0" required="false" fileHash="dea078d9757ba794190910ce1c384cf5" />
+    <mod modName="FS25_Sawmill_Pack" title="Sawmill Pack" version="1.0.0.0" required="false" fileHash="6cbf9bf0aa50c7c87c93f75982e2f575" />
+    <mod modName="FS25_Cultivator_3m" title="Cultivator 3m" version="1.0.0.0" required="false" fileHash="6b2454520cd7cdca62567f43da26f5a8" />
+    <mod modName="FS25_RS250_crossplay" title="Lizard Steiger 250" version="1.0.0.1" required="false" fileHash="547d5d1ad171e53abd6450287fd0ba71" />
+    <mod modName="FS25_removeFrontloaderAxleLocking" title="Remove Frontloader Axle Locking" version="1.0.0.0" required="false" fileHash="2fd905c6d1ea5243c422971e30169337" />
+    <mod modName="FS25_Randon_Dolly" title="Randon Dolly" version="1.0.0.0" required="false" fileHash="dee0f3fe96bf041e8241ae4434c0f5d7" />
+    <mod modName="FS25_Profihopper" title="Amazone Profihopper" version="1.0.0.0" required="false" fileHash="51019c6de5ebe5fa9cfbce1ba3e99fe0" />
+    <mod modName="FS25_lodeKingDistinctionSuperB" title="LodeKing Distinction Super-B" version="1.0.0.0" required="false" fileHash="0024d0d9189b06d462b66c4b9b3449c9" />
+    <mod modName="FS25_Concrete_BunkerSilos" title="Concrete BunkerSilos" version="1.0.0.0" required="false" fileHash="6e86676f8a41c72373d8b65c7603eddc" />
+    <mod modName="FS25_PiaggioApe" title="Piaggio Ape" version="1.0.0.1" required="false" fileHash="42b71765b182b8204c3c23018a4c871d" />
+    <mod modName="FS25_cultivatorFieldCreator" title="Cultivator Field Creator" version="1.0.0.0" required="false" fileHash="70325b700fa5c2dba89b10727b7632bf" />
+    <mod modName="FS25_OzenisStrawMachinePack" title="Ozen Is Straw Machine Pack" version="1.0.0.0" required="false" fileHash="77f5f26ec36d33c33b5ba1dfb166ee9b" />
+    <mod modName="FS25_PolishBunkerSilo02" title="Polish Silage Silo" version="1.0.0.0" required="false" fileHash="c2ac750f50e7784c63057ee621537375" />
+    <mod modName="FS25_Lizard_FTN1000" title="Lizard FTN 1000" version="1.0.0.0" required="false" fileHash="f8aa06dd4b091628424ebd6100df4561" />
+    <mod modName="FS25_ObjectStorageExtension" title="Object Storage Extension" version="1.0.0.0" required="false" fileHash="4a3176e52e4515f86e30315e8d746148" />
+    <mod modName="FS25_JD_S700_Hillco" title="John Deere Hillco S700 Series" version="1.0.0.0" required="false" fileHash="cfd15b50e76470efd7c529001a8ea362" />
+    <mod modName="FS25_MF600Series" title="Massey-Ferguson 600 Series" version="1.1.0.0" required="false" fileHash="07c2194b814327be556133049b226c8f" />
+    <mod modName="FS25_mercedesBenzMBtracSeries" title="Mercedes-Benz MB-trac Series" version="1.2.0.0" required="false" fileHash="446b3b6a4c2833d6f6d3e465ad0852a3" />
+    <mod modName="FS25_JohnDeere_915V_Ripper" title="John Deere 915V-Ripper" version="1.0.0.0" required="false" fileHash="336f88499f834cd20c766ef227ec0cb9" />
+    <mod modName="FS25_ManureCrane" title="Manure Crane" version="1.0.0.0" required="false" fileHash="6168e88e754484998623da9ad61c41da" />
+    <mod modName="pdlc_nexatPack" title="NEXAT Pack" version="1.3.1.0" required="false" fileHash="51f9096799dd008e697d8a2e06d60643" />
+    <mod modName="FS25_JohnDeere4020" title="John Deere 4020, 4010, 4000" version="1.0.0.0" required="false" fileHash="91d288ee8d4cc340b8757ba11b016ea4" />
+    <mod modName="FS25_claasLiner4900" title="CLAAS Liner 4900" version="1.0.0.0" required="false" fileHash="f6f58dbf7c54c44d15d9fe6e4e7e94a8" />
+    <mod modName="FS25_WoodStorage" title="Mobile Wood Storage" version="1.0.0.1" required="false" fileHash="ea2e6cd048e1efc588a7ff54c1a138e9" />
+    <mod modName="FS25_BigBud_series_4" title="BigBud Series 4" version="1.0.0.0" required="false" fileHash="03e20489b6e8a098dd1598f056847096" />
+    <mod modName="FS25_bometComa" title="Bomet Coma" version="1.0.0.0" required="false" fileHash="4938796ea96f4b2fed56e907fc2caf12" />
+    <mod modName="FS25_Fendt_Favorit600_LS_LSA" title="Fendt Favorit 600 LS/LSA" version="1.0.0.0" required="false" fileHash="a91616740596a0e9568882c79e98405f" />
+    <mod modName="FS25_manTGX18500" title="MAN TGX 18.500 4x2" version="1.0.0.0" required="false" fileHash="c84b4ce210f505946f53aa3c37c3bfa3" />
+    <mod modName="FS25_Contracts_Plus" title="Contracts Plus" version="1.0.0.3" required="false" fileHash="35bf4b022ea310336331b08f029585ce" />
+    <mod modName="FS25_Ivoy_Cereal" title="Ivoy Cereal" version="1.0.0.0" required="false" fileHash="9cb8f28b0ed6b1655f6cb695fc8ddc9c" />
+    <mod modName="FS25_ManTgs18Series" title="MAN TGS 18 Series" version="2.1.0.0" required="false" fileHash="c147b60cb3ca412d514c56eceffbcf86" />
+    <mod modName="FS25_animalLimitIncreaser64" title="More Animal Husbandries Possible (64)" version="1.0.0.0" required="false" fileHash="f9ea6f465013e7f0aeafa385e8e47127" />
+    <mod modName="FS25_CLAAS_Xerion_3000_series" title="CLAAS Xerion 3000 Series" version="1.0.0.0" required="false" fileHash="30bc8423933980a3696f2cb28068ea92" />
+    <mod modName="FS25_amazoneD8_30" title="Amazone D8-30" version="1.0.0.1" required="false" fileHash="36bd26c722b4bd1a33749d3e40930a4f" />
+    <mod modName="FS25_DT75_IC" title="DT-75 IC" version="1.0.0.0" required="false" fileHash="c3f7cec38033f629a72d4b23ec2cd293" />
+    <mod modName="FS25_FarmlandOverview" title="Farmland Overview" version="1.0.1.0" required="false" fileHash="b52e7a4df7e8a2c371868cf70d643ac9" />
+    <mod modName="FS25_farmetFalcon6Pro" title="Farmet Falcon 6 PRO Fert+" version="1.0.0.0" required="false" fileHash="2fc5785fb19430dd18b002783bd00c16" />
+    <mod modName="pdlc_daimlerTruckPack" title="Mercedes-Benz Trucks Pack" version="1.2.0.0" required="false" fileHash="18d54def2838b78db0319dde2a01a021" />
+    <mod modName="FS25_productionsLimitIncreaser120" title="More Productions Possible (120)" version="1.0.0.0" required="false" fileHash="8711827e44e6668a8fa53ed317149ce7" />
+    <mod modName="FS25_lizardTardis" title="Lizard Tardis" version="1.1.0.1" required="false" fileHash="2674853c18f5e880139abb35841998a4" />
+    <mod modName="FS25_lizardBunkerSilo" title="Bunker Silo" version="1.0.0.0" required="false" fileHash="62f1865932c634b6797e0b8cc439a561" />
+    <mod modName="FS25_fertilizeOnce" title="Fertilize Once" version="1.0.0.0" required="false" fileHash="1742633625aeba804ed62c047a62016d" />
+    <mod modName="FS25_flieglTMK160" title="Fliegl TMK160" version="1.0.0.0" required="false" fileHash="62928494641e7c5ce3799fabfd78ada7" />
+    <mod modName="FS25_Lizard_PB3_0x1" title="Lizard PB3-0x1" version="1.1.0.0" required="false" fileHash="02bba47892d31336e9b6c687d68e9334" />
+    <mod modName="FS25_Agri_Loadall" title="JCB Agri Loadall" version="1.0.0.1" required="false" fileHash="e7caae1b69695f68c3d84f9f7392b1d8" />
+    <mod modName="FS25_EnhancedShopSorting" title="Enhanced Shop Sorting" version="1.1.0.0" required="false" fileHash="2fdd1ad2db7cc39ef24065a3057a4476" />
+    <mod modName="FS25_JohnDeereA" title="John Deere A" version="1.0.0.0" required="false" fileHash="f719d063d149310eb9138588f5b77a92" />
+    <mod modName="FS25_ClassicTractorsPack" title="Classic Tractors Pack" version="1.0.0.0" required="false" fileHash="e244feaaa764cab0e7033d37a0c3f914" />
+    <mod modName="FS25_KrampeBigBody750" title="Krampe Big Body 750" version="1.2.0.0" required="false" fileHash="e5c4cafe90487597c4e944fa8cd815ee" />
+    <mod modName="FS25_Fiatagri_110_90" title="Fiatagri 110-90" version="1.0.0.0" required="false" fileHash="9d115fc467f95a76114175a62bbcc2ef" />
+    <mod modName="FS25_JohnDeereSeries7010" title="John Deere Series 7010" version="1.0.0.0" required="false" fileHash="2c9b6e2d4870a8ee59af6aa7a82ca52b" />
+    <mod modName="FS25_JohnDeere_330_LawnTractor" title="John Deere 330 Lawn Tractor" version="1.0.0.0" required="false" fileHash="d1d731bf2007d5935d1771c4a92f571c" />
+    <mod modName="FS25_Lizard_FOP_616_10" title="Lizard FOP 616.10" version="1.0.0.0" required="false" fileHash="e6f185292a8ee9c43b8ea2d252c37c31" />
+    <mod modName="FS25_Financing" title="Financing" version="1.0.0.2" required="false" fileHash="275decf072ecef5a6beb2e5e2f9cbca2" />
+    <mod modName="pdlc_strawHarvestPack" title="Straw Harvest Pack" version="1.1.0.0" required="false" fileHash="35141fd5784c6d3c5123988e7de08cc1" />
+    <mod modName="FS25_CLAASMatador" title="Matador And Mercator Pack" version="1.0.0.0" required="false" fileHash="538a242fefe8fc7adecfed24d8f1ec7f" />
+    <mod modName="FS25_johnDeereXUV865M_forestry" title="John Deere XUV865M Forestry" version="1.0.0.0" required="false" fileHash="d37ef0b40175f4417cf2e2e49a8d40ef" />
+    <mod modName="FS25_Handcart" title="Handcart" version="1.0.0.0" required="false" fileHash="74751d9c6d0209df06b9b226ac13249c" />
+    <mod modName="FS25_FIAT_Universal_650" title="Fiat Universal 650" version="1.0.0.0" required="false" fileHash="265eab107b19d10fae691baa6bdec0cb" />
+    <mod modName="FS25_JD_7810_RowCrop" title="John Deere 7810 Row Crop" version="1.0.0.0" required="false" fileHash="45b6f1e7b8ebd8d61be011dd3e844e04" />
+    <mod modName="pdlc_highlandsFishingPack" title="Highlands Fishing Expansion" version="1.2.0.0" required="false" fileHash="8bafac228c9021d8a369c957a3ffac31" />
+</careerSavegame>
