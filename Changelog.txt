@@ -71,7 +71,7 @@ Known Notes:
 - Heuristic matching is now functional, but repeated blocks and sibling-heavy XML structures can still produce ambiguous matches in some cases.
 - Additional refinement is planned to improve matching accuracy where multiple similar nodes exist under the same parent or across repeated structures.
 
-XML Editor 2.3.1 – Changelog
+XML Editor 1.2.5 – Changelog
 
 New:
 - Added a new XML Generator tool to the Tools system.
@@ -108,3 +108,54 @@ Internal:
 Known Notes:
 - The XML Generator is now functional and stable after rebuild.
 - Further UI polish and workflow refinements can still be added in future updates.
+
+XML Editor 1.2.6 – Changelog
+
+New:
+- Added a new XML Multi-Compare tool to the Tools system.
+- XML Multi-Compare supports loading and comparing multiple XML files at once.
+- Added support for using the currently open XML file in the Multi-Compare tool.
+- Added support for comparing files either:
+  - across all loaded XML files
+  - against a selected baseline XML
+- Added filter modes for:
+  - Differences only
+  - All results
+  - Missing only
+  - Same only
+  - Changed only
+  - Summary view
+- Added CSV export support for visible comparison results.
+- Added a new Summary view to provide a cleaner high-level comparison overview.
+- Added affected-file counting within the Summary view.
+
+Changed:
+- Updated Multi-Compare so loaded files are displayed by XML file name instead of full file path.
+- Updated the baseline selector to display XML file names instead of full paths.
+- Improved duplicate filename handling by appending numbered suffixes where needed.
+- Widened and improved the baseline dropdown for better readability.
+- Improved the overall usability of the Multi-Compare interface for larger comparison sets.
+
+XML Multi-Compare – Current Features:
+- Load unlimited XML files into a single comparison session
+- Compare all files together or against a chosen baseline
+- Compare flattened XML path/value pairs
+- Detect:
+  - Same Across All
+  - Different
+  - Missing in Some
+  - Same as Baseline
+  - Different from Baseline
+  - Missing vs Baseline
+- Search across paths and values
+- Export visible comparison data to CSV
+
+Internal:
+- Added a dedicated XML Multi-Compare tool module to the tools folder.
+- Extended the tools suite with batch-style XML comparison functionality.
+- Added a summary-focused reporting mode for easier outlier detection across many XML files.
+
+Notes:
+- XML Multi-Compare currently uses path/value-based comparison.
+- Heuristic remapping for structurally different but logically equivalent nodes is not yet implemented in Multi-Compare.
+- Heuristic comparison improvements remain planned for the standard XML Comparison tool next.
