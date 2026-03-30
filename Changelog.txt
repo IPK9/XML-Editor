@@ -70,3 +70,41 @@ Internal:
 Known Notes:
 - Heuristic matching is now functional, but repeated blocks and sibling-heavy XML structures can still produce ambiguous matches in some cases.
 - Additional refinement is planned to improve matching accuracy where multiple similar nodes exist under the same parent or across repeated structures.
+
+XML Editor 2.3.1 – Changelog
+
+New:
+- Added a new XML Generator tool to the Tools system.
+- XML Generator can build a reusable generator from an existing XML file.
+- Added support for using the currently open XML file as the generator source.
+- Added support for browsing and loading a separate XML file into the generator.
+- Added support for saving generator definitions for later reuse.
+- Added support for loading previously saved generator definitions.
+- Added support for generating new XML output files from saved generator data.
+
+Changed:
+- Rebuilt the XML Generator tool from scratch for improved stability.
+- Reworked the XML Generator UI to use a lighter, faster layout.
+- Updated Generate XML behaviour so it always prompts for an output location instead of silently targeting an existing XML file.
+- Improved general responsiveness of the XML Generator workflow.
+
+Fixed:
+- Fixed save and generate actions failing or behaving unpredictably in the XML Generator.
+- Fixed issues with file dialogs not working correctly in the generator workflow.
+- Fixed performance problems that made the XML Generator feel excessively slow.
+- Fixed value handling so imported XML values are preserved as literal text by default.
+- Fixed formatting preservation so values such as:
+  - 00000000000000000000
+  - 15.000000
+  - 6.000000
+  are no longer unintentionally normalised during generation.
+- Fixed generator output so only deliberately changed values should differ from the source XML.
+
+Internal:
+- XML Generator now preserves original XML text formatting by default.
+- Auto-imported generator fields now default to string handling unless explicitly changed.
+- Improved reliability of generator save/load/output handling.
+
+Known Notes:
+- The XML Generator is now functional and stable after rebuild.
+- Further UI polish and workflow refinements can still be added in future updates.
